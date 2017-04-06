@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ife-Task-001</title>
+</head>
+<!--<body background="D:\lu01.jpg"> 背景图片 -->
+  <body>
+  <h1>HTML学习</h1>
+  <P>
+    要开始学习HTML了，你准备好了吗？
+  </p>
+  <a href="http://www.baidu.com" target="_blank">百度</a><br>
+  <img src="D:\lu01.jpg" width="400"  height="300" alt="lu01"/><br>
+  <ul>
+    <dl>第一项</dl><br>
+    <dl>第二项</dl><br>
+    <dl>第三项</dl><br>
+  </ul>
+  <br>
+  <select>
+     <option>北京</option>
+     <option>杭州</option>
+     <option>广州</option>
+     <option selected="selected">上海</option>
+  </select><br>
+  <table border="1">
+    <caption>表格</caption>
+     <thead>自定义</thead> <br>
+       <tr>
+         <th>第一个</th>
+         <td>中国</td>
+         <td>中国人</td>
+       </tr>
+       <tr>
+         <th>第二个</th>
+         <td>英国</td>
+         <td>英国人</td>
+       </tr>
+       <tr>
+         <th>第三个</th>
+         <td>美国</td>
+         <td>美国人</td>
+       </tr>
+       <tr>
+         <th>第四个</th>
+         <td colspan="2">美国人</td>
+       </tr>
+  </table><br> 
+  <h2>注册窗口:</h2>
+  <form>
+    <label for="email"> 请输入邮箱地址：</label>
+    <input id="email" type="text" value="这是一个文本输入框"/><br>
+    <label for="password">请输入密码：</label>
+    <input id="password" type="text" value="这是一个文本输入框"/><br>   
+    <label for="password2">请重新输入密码：</label>
+    <input id="password2" type="text" value="这是一个文本输入框"/>密码为6~16位英文数字<br> 
+    <p>性别：</p>
+    <input type="radio" id="nan" name="gen" value="on"/>
+    <label for="nan">男</label>
+    <input type="radio" id="nv" name="gen" value="on">
+    <label for="nv">女</label>
+    <p>城市：</p>
+    <select>
+      <option>北京</option>
+      <option>杭州</option>
+      <option>广州</option>
+      <option selected="selected">上海</option>
+    </select>
+    <p>爱好：</p>
+    <input type="checkbox" id="yd" CHECKED=“” vabel="on"/>
+    <label for="yd">运动</label>
+    <input type="checkbox" id="ys" vabel="on"/>
+    <label for="ys">艺术</label>
+    <input type="checkbox" id="kx" vabel="on"/>
+    <label for="ke">科学</label> 
+    <p>个人描述：</p> <br>
+    <textarea rows="3">请输入您的个人描述</textarea>   
+    <br>  
+    <input name="submit" type="submit" value="确认提交"/>
+  </form>
+</body>
+</html>
