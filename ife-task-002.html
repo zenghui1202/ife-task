@@ -4,6 +4,49 @@
  <meta charset="utf-8">
  <title>ife-Task-002</title> 
  <link rel="stylesheet" href="style1.css">
+ /*<style>
+    * {  margin: 0;  padding: 0;}
+    body { width: 100%;  background-color: #dedede;  color: #000;  font-size: 14px;}
+      		 /*设置头部块*/ 
+	header{ width: 100%;  background-color: #333; }  
+    header section {  width: 1240px;  height: 60px;  margin: 0 auto;}
+    header img {  height: 40px;  width: auto;  margin: 5px 0 0 10px;}
+    header ul {  float: right;  margin: 20px 0 0 0;}
+    header ul li {  float: left;  width: 80px;  color: #fff;  margin-left: 20px;}
+    header ul li.selected {  color: #999;}	
+        /*设置边框块*/		
+	article{border-top:1px solid #808A87;
+		    border-left:1px solid #808A87;
+		    border-right:3px solid #808A87;
+		    border-bottom:2px solid #808A87;
+		    background-color: white; 
+		    margin:10px 5px 10px 5px; 
+	        padding:5px 10px 5px 10px; 
+		    text-align:left;}                  	
+		 /*图片块设置*/			
+	figure  {  width: 100px;  border: 1px solid #ccc;  padding: 10px;
+               text-align: center;  margin: 15px 40px;  font-size: 12px;}
+    figure img {  width: 100px;  height: 80px;  margin-top: 10px;}  
+         /*排列有序*/
+	h3.numbered {counter-reset: mynum;}
+	p.numbered:before {content: "("counter(mynum) ")";
+                       counter-increment: mynum;
+					   font-weight: bold;   } 
+    .table01 {  font: 100% sans-serif;   background-color: white;
+                border-collapse: collapse;   empty-cells: show;
+				border: 1px  solid black;   width:100%; }  
+	.table01 thead th {text-align: center; background:black; color:white;  }
+	.table01 tbody tr td,th{border: 1px solid black;   padding:8px;	 }
+        /*表格设置*/
+	.tip{color: gray}
+	table.form { background-color: white;   empty-cells: show;   width:100%;    
+	             text-align: left; } 		   
+	table.form td:first-child { text-align:right; background:white; 
+		                        border: 1px  solid white ; width:35%;  }
+    textarea{ width: 500px;  height: 105px}
+    button {  width: 100%;  height: 40px;  background-color: #3356cf;  color: #fff;
+              font-size: 20px;  border: 0;  border-radius: 10px;}
+ </style>*/
 </head>
 <body>
   <header>  
@@ -143,7 +186,7 @@
 	     <td>性别：</td>
 		 <td><input type="radio" id="nan" name="sex" value="on"/>
              <label for="nan">男</label>
-             <input type="radio" id="nv" name="sex" value="on"/>
+             <input type="radio" id="nv" name="sex" value=""/>
              <label for="nv">女</label>
 		 </td>
 	  </tr>
