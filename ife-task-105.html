@@ -1,0 +1,237 @@
+<!DOCTYPE HEML>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>ife-Task-002</title> 
+<!--<link rel="stylesheet" href="style1.css">-->
+<style type="text/css">
+    * {  margin: 0;  padding: 0; }
+    body { width: 100%;  background-color: #dedede;  color: #000;  font-size: 20px;   }
+    /*设置头部块*/ 
+	header{ width: 100%;  background-color: #333; } 	
+    header section { height: 60px;  }
+    header img {  height: 40px;  width: auto;  margin: 5px 0 0 10px;}
+    header ul {  float: right;  margin: 20px 0 0 0;}
+    header ul li {  float: left;  width: 80px;  color: #fff;  margin-left: 20px;}
+    header ul li.selected { color: #999; }	
+	
+    /*设置边框块*/		
+	.right,article{border-top:1px solid #808A87;
+		                border-left:1px solid #808A87;
+		                border-bottom:2px solid #808A87;
+		                border-right:3px solid #808A87;
+		                background-color: white; 
+		                margin:10px 5px 10px 5px; 
+	                    padding:5px 10px 5px 10px;  }
+	/*图文块*/	
+	.left{  margin-right:440px; }
+	.imgs:before {  content: " ";  display: table;}
+	.imgs:after {  content: " ";  display: table;  clear: both;}
+	/*侧边栏块*/
+    .right{position:absolute; top:60px; right:0px; width:400px;}	
+	
+    /*图片块设置*/			
+	figure  {  width: 100px;  border: 1px solid #ccc;  padding: 10px;  float:left;
+                  text-align: center;  margin: 15px 40px;  font-size: 12px;}
+    figure img {  width: 100px;  height: 80px;  margin-top: 10px;} 	
+    /*排列有序*/
+	h3.numbered {counter-reset: mynum;}
+	p.numbered:before {content: "("counter(mynum) ")";
+                       counter-increment: mynum;
+					   font-weight: bold;   } 
+    .table01 {  font: 100% sans-serif;   background-color: white;
+                border-collapse: collapse;   empty-cells: show;
+				border: 1px  solid black;   width:100%; }  
+	.table01 thead th {text-align: center; background:black; color:white;  }
+	.table01 tbody tr td,th{border: 1px solid black;   padding:8px;	 }
+    /*表格设置*/
+	.tip{color: gray}
+	table.form { background-color: white;   empty-cells: show;   width:100%;    
+	             text-align: left; } 		   
+	table.form td:first-child { text-align:right; background:white; 
+		                        border: 1px  solid white ; width:35%;  }
+    textarea{ width: 50%;  height: 50px}
+    button {  width: 100%;  height: 40px;  background-color: #3356cf;  color: #fff;
+              font-size: 20px;  border: 0;  border-radius: 10px;}
+    /*设置页脚块*/ 
+	footer{ width: 100%; height:60px;  background-color: #333;  } 
+	.last { color: white;  font-size:15px; height:60px;    line-height:60px;
+	        text-align:center;   }
+</style>
+</head>
+<body>
+  <header>  
+    <section>  
+	    <img id="logo"  src="./baidu.png" alt="百度"  align=left />
+		  <ul>
+		     <li a href="http://www.baidu.com/">导航1</li>
+	         <li a href="http://www.baidu.com/">导航2</li>
+		     <li a href="http://www.baidu.com/">导航3</li>
+	         <li a href="http://www.baidu.com/">导航4</li> 
+		  </ul>	
+    </s>
+  </header>
+<div class="left">
+    <article>
+        <h1>文章一级标题</h1>
+        <h2>二级标题</h2>
+        <h3>文章作者&nbsp;&nbsp;文章发表时间</h3>
+        <P style=text-indent:2em>要开始学习HTML了，你准备好了吗？<br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<a href="http://www.baidu.com" target="_blank">这是一个很长的段落</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行。
+        </p>
+        <P style=text-indent:2em>    这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行。</p>
+        <img src="./lu01.jpg" width="400"  height="300" alt="lu01"/><br>
+        <P style=text-indent:2em>要开始学习HTML了，你准备好了吗？<br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<a href="http://www.baidu.com" target="_blank">这是一个很长的段落</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行。</p>
+    </article>
+    <article>
+        <h1>另一篇文章一级标题</h1>
+        <h2>二级标题</h2>
+        <h3>文章作者&nbsp;&nbsp;文章发表时间</h3>
+        <P style=text-indent:2em>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<a href="http://www.baidu.com" target="_blank">这是一个很长的段落</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行。</p>
+        <P style=text-indent:2em>    这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行。</p>
+        <img src="./lu01.jpg" width="400"  height="300" alt="lu01"/><br>
+        <ol style="list-style:none">
+            <li>第一项</li><br>
+            <li>第二项</li><br>
+            <li>第三项</li><br>
+        </ol>
+    </article>
+    <article>
+        <h2>图片</h2>
+	    <div class="imgs"> 
+	        <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="./lu01.jpg" alt="lu01" width="160" height="160">
+            </figure>	   
+            <figure>
+                 <figcaption>好看的图片</figcaption>
+            <img src="./lu01.jpg" alt="lu01" width="160" height="160">
+                </figure>	   
+            <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="./lu01.jpg" alt="lu01" width="160" height="160">
+            </figure>	   
+	        <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="./lu01.jpg" alt="lu01" width="160" height="160">
+            </figure>
+	        <figure>
+                <figcaption>好看的图片</figcaption>
+                <img src="./lu01.jpg" alt="lu01" width="160" height="160">
+            </figure>
+	    </div>  
+    </article>
+    <article>
+        <h1>最后一篇文章一级标题</h1>
+        <h2>二级标题</h2>
+        <h3>文章作者&nbsp;&nbsp;文章发表时间</h3>
+        <div class="numbered">
+		    <ol>
+                <p class="numbered">Arctic</p>
+                <p class="numbered">Atlantic</p>
+                <p class="numbered">Pacific</p>
+                <p class="numbered">Indian</p>
+            </ol>
+		</div>
+        <h3>下面是一个表格，表格添加了border=1，方便看出来：
+        <table class="table01">	
+	        <thead>
+                <tr>
+                    <th color="white"> 表头</th>
+                    <th color="white">表头</th>
+		            <th color="white">表头</th>
+                </tr>
+            </thead>
+	        <tbody>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+		            <td a href="http://www.baidu.com/" style="text-decoration:underline">操作</td>
+	            </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+		            <td a href="http://www.baidu.com/" style="text-decoration:underline">操作</td>
+                </tr>
+                <tr>
+		            <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+		            <td a href="http://www.baidu.com/" style="text-decoration:underline">操作</td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+		            <td a href="http://www.baidu.com/" style="text-decoration:underline">操作</td>
+                </tr>        
+            </tbody>
+	        <tfoot font-weight="bold"; background-color="#DCDCDC"; >
+                <tr>
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+            </tfoot>
+        </table>	
+    </article> 
+</div> 
+<div class="right">  
+  <h4 style="border-left:3px solid #808A87";>这里以后是一个侧栏，这是侧栏的标题</h4>
+    <table class="form" >     
+	  <tr>
+	    <td>请输入邮箱地址：</td>
+        <td><input id="email" type="text" value="这是一个文本输入框" /></td>
+	  </tr>
+	  <tr>	  
+        <td></td>
+		<td class="tip">邮箱地址请按要求输入</td>
+	  </tr>
+      <tr>
+	    <td>请输入密码：</td>
+        <td><input id="password" type="text" value="这是一个文本输入框"/><br></td>
+      </tr>      
+	  <tr>
+	     <td></td>
+		 <td class="tip">密码请为6~16位英文数字</td>
+	  </tr>
+	  <tr>
+	     <td>性别：</td>
+		 <td><input type="radio" id="nan" name="sex" value="on"/>
+             <label for="nan">男</label>
+             <input type="radio" id="nv" name="sex" value=""/>
+             <label for="nv">女</label>
+		 </td>
+	  </tr>
+	  <tr>
+	     <td>城市：</td>
+		 <td><select>
+                 <option>北京</option>
+                 <option>杭州</option>
+                 <option>广州</option>
+                 <option selected="selected">上海</option>
+             </select>
+		 </td>
+	  </tr>
+	  <tr>
+	     <td>爱好：</td>
+		 <td><input type="checkbox" id="yd" CHECKED=“” vabel="on"/>
+             <label for="yd">运动</label>
+             <input type="checkbox" id="ys" vabel="on"/>
+             <label for="ys">艺术</label>
+             <input type="checkbox" id="kx" vabel="on"/>
+             <label for="ke">科学</label> 
+		 </td>
+	  </tr>
+	  <tr>
+	     <td>个人描述：</td>
+		 <td><textarea>请输入您的个人描述</textarea></td>
+      </tr>     
+    </table>
+  <button type="button">确认提交</button>
+</div>
+    
+
+<footer>
+    <div class="last">
+      <p> 版权所有&copy;</p>
+	<div>
+</footer>
+</body> 
+</html>
